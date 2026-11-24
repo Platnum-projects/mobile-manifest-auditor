@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.example.demo">
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <application android:label="Demo" android:usesCleartextTraffic="true" android:allowBackup="true">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN" /></intent-filter>
+        </activity>
+        <receiver android:name=".InternalReceiver" android:exported="false" />
+    </application>
+</manifest>
